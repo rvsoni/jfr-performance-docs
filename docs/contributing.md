@@ -29,7 +29,7 @@ The documentation website is built with **Docusaurus 3** using **TypeScript** an
 
 1. Clone the documentation repository:
    ```bash
-   git clone https://github.com/YOUR-GITHUB-USERNAME/jfr-performance-docs.git
+   git clone https://github.com/rvsoni/jfr-performance-docs.git
    cd jfr-performance-docs
    ```
 
@@ -86,9 +86,9 @@ npm run serve
 ## 3. Pull Request & Issue Guidelines
 
 - **Issues:** Report bugs, outdated documentation, or suggest new scenario playbooks using the GitHub issue tracker for the respective repository:
-  - [jfr-performance-mcp Issues](https://github.com/YOUR-GITHUB-USERNAME/jfr-performance-mcp/issues)
-  - [jfr-performance-demo-app Issues](https://github.com/YOUR-GITHUB-USERNAME/jfr-performance-demo-app/issues)
-  - [jfr-performance-docs Issues](https://github.com/YOUR-GITHUB-USERNAME/jfr-performance-docs/issues)
+  - [jfr-performance-mcp Issues](https://github.com/rvsoni/jfr-performance-mcp/issues)
+  - [jfr-performance-demo-app Issues](https://github.com/rvsoni/jfr-performance-demo-app/issues)
+  - [jfr-performance-docs Issues](https://github.com/rvsoni/jfr-performance-docs/issues)
 - **Pull Requests:** Ensure PR titles follow standard conventional commits (e.g. `docs: add slow-io investigation playbook`, `fix: correct MCP tool schema in reference`).
 - **No Hallucinated Benchmarks:** Do not submit fabricated benchmark figures or claim events that have not been verified using a real JFR capture.
 

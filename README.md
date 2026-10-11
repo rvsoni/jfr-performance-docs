@@ -4,8 +4,8 @@
 
 This repository hosts the official documentation website for the **JFR Performance Lab** ecosystem, which comprises two companion open-source projects:
 
-1. [`jfr-performance-mcp`](https://github.com/YOUR-GITHUB-USERNAME/jfr-performance-mcp) — A Java 21 MCP server exposing 11 structured JVM performance diagnostic tools to AI assistants.
-2. [`jfr-performance-demo-app`](https://github.com/YOUR-GITHUB-USERNAME/jfr-performance-demo-app) — A Spring Boot application providing 10 reproducible, safe JVM performance anti-patterns and controlled `.jfr` captures.
+1. [`jfr-performance-mcp`](https://github.com/rvsoni/jfr-performance-mcp) — A Java 21 MCP server exposing 11 structured JVM performance diagnostic tools to AI assistants.
+2. [`jfr-performance-demo-app`](https://github.com/rvsoni/jfr-performance-demo-app) — A Spring Boot application providing 10 reproducible, safe JVM performance anti-patterns and controlled `.jfr` captures.
 
 The documentation website guides Java engineers and SREs from initial installation to diagnosing production bottlenecks and quantitatively validating fixes.
 
@@ -62,7 +62,7 @@ npm run serve
 ## 🌐 GitHub Pages Deployment Setup
 
 The website is configured to deploy as a GitHub Pages project site:
-`https://YOUR-GITHUB-USERNAME.github.io/jfr-performance-docs/`
+`https://rvsoni.github.io/jfr-performance-docs/`
 
 ### 1. Required Repository Settings in GitHub
 Before your first push to `main`:
@@ -82,7 +82,7 @@ If you wish to point a custom domain (e.g., `jfr-lab.example.com`) to the site:
    ```text
    jfr-lab.example.com
    ```
-3. Configure your DNS provider with a `CNAME` record pointing to `<YOUR-GITHUB-USERNAME>.github.io`.
+3. Configure your DNS provider with a `CNAME` record pointing to `<rvsoni>.github.io`.
 
 ---
 

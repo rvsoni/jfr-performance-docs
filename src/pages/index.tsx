@@ -76,7 +76,7 @@ const FEATURED_SCENARIOS: ScenarioFeature[] = [
 
 function HeroBanner(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
-  const orgName = (siteConfig.customFields?.organizationName as string) || 'YOUR-GITHUB-USERNAME';
+  const orgName = (siteConfig.customFields?.organizationName as string) || 'rvsoni';
 
   return (
     <header className={styles.heroSection}>

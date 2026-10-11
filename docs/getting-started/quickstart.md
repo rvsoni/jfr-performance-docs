@@ -56,10 +56,10 @@ Create a workspace directory and clone both companion repositories:
 mkdir -p ~/jfr-lab && cd ~/jfr-lab
 
 # 1. Clone the Spring Boot demo workload application
-git clone https://github.com/YOUR-GITHUB-USERNAME/jfr-performance-demo-app.git
+git clone https://github.com/rvsoni/jfr-performance-demo-app.git
 
 # 2. Clone the Java MCP server
-git clone https://github.com/YOUR-GITHUB-USERNAME/jfr-performance-mcp.git
+git clone https://github.com/rvsoni/jfr-performance-mcp.git
 ```
 
 ### Build the Demo Application

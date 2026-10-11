@@ -51,6 +51,6 @@ A curated collection of official, authoritative documentation, specifications, a
 
 ## 5. Companion Projects
 
-- [jfr-performance-mcp Repository](https://github.com/YOUR-GITHUB-USERNAME/jfr-performance-mcp) — The Java MCP server providing 11 diagnostic tools for JFR recordings.
-- [jfr-performance-demo-app Repository](https://github.com/YOUR-GITHUB-USERNAME/jfr-performance-demo-app) — The ShopSphere Spring Boot application generating reproducible JVM performance anti-patterns.
-- [jfr-performance-docs Repository](https://github.com/YOUR-GITHUB-USERNAME/jfr-performance-docs) — The source repository for this Docusaurus documentation website.
+- [jfr-performance-mcp Repository](https://github.com/rvsoni/jfr-performance-mcp) — The Java MCP server providing 11 diagnostic tools for JFR recordings.
+- [jfr-performance-demo-app Repository](https://github.com/rvsoni/jfr-performance-demo-app) — The ShopSphere Spring Boot application generating reproducible JVM performance anti-patterns.
+- [jfr-performance-docs Repository](https://github.com/rvsoni/jfr-performance-docs) — The source repository for this Docusaurus documentation website.

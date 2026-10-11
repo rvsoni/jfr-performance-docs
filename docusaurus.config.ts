@@ -2,7 +2,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-const organizationName = process.env.GITHUB_ORG || 'YOUR-GITHUB-USERNAME';
+const organizationName = process.env.GITHUB_ORG || 'rvsoni';
 const projectName = process.env.GITHUB_PROJECT || 'jfr-performance-docs';
 const url = process.env.SITE_URL || `https://${organizationName}.github.io`;
 const baseUrl = process.env.BASE_URL || '/jfr-performance-docs/';
@@ -11,6 +11,11 @@ const config: Config = {
   title: 'JFR Performance Lab',
   tagline: 'Evidence-driven JVM performance investigation with JFR, JMC and AI.',
   favicon: 'img/favicon.ico',
+
+  customFields: {
+    organizationName,
+    projectName,
+  },
 
   future: {
     v4: true,

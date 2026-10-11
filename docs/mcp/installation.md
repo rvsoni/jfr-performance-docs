@@ -27,7 +27,7 @@ keywords:
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-GITHUB-USERNAME/jfr-performance-mcp.git
+git clone https://github.com/rvsoni/jfr-performance-mcp.git
 cd jfr-performance-mcp
 ```
 
