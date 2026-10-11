@@ -1,0 +1,309 @@
+.heroSection {
+  padding: 5rem 0 4rem;
+  background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 50%),
+              radial-gradient(circle at bottom left, rgba(99, 102, 241, 0.1), transparent 50%);
+  border-bottom: 1px solid var(--site-card-border);
+  text-align: center;
+}
+
+.heroTaglinePill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 1rem;
+  border-radius: 9999px;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.heroTitle {
+  font-size: 3.25rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+
+.heroGradientText {
+  background: linear-gradient(135deg, #0284c7 0%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme='dark'] .heroGradientText {
+  background: linear-gradient(135deg, #38bdf8 0%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  max-width: 780px;
+  margin: 0 auto 2.25rem;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.6;
+}
+
+.ctaGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.repoButtonsGroup {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.repoBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  border: 1px solid var(--site-card-border);
+  background: var(--site-card-bg);
+  color: var(--ifm-color-content);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.repoBtn:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.section {
+  padding: 4.5rem 0;
+}
+
+.sectionAlt {
+  padding: 4.5rem 0;
+  background-color: var(--ifm-background-surface-color);
+  border-top: 1px solid var(--site-card-border);
+  border-bottom: 1px solid var(--site-card-border);
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3.5rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.sectionHeader p {
+  color: var(--ifm-color-content-secondary);
+  font-size: 1.1rem;
+}
+
+.workflowGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  position: relative;
+}
+
+@media (max-width: 996px) {
+  .workflowGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .workflowGrid {
+    grid-template-columns: 1fr;
+  }
+  .heroTitle {
+    font-size: 2.25rem;
+  }
+}
+
+.workflowStep {
+  background: var(--site-card-bg);
+  border: 1px solid var(--site-card-border);
+  border-radius: 12px;
+  padding: 1.75rem;
+  position: relative;
+  box-shadow: var(--site-card-shadow);
+}
+
+.stepNumber {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--ifm-color-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.stepIcon {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.workflowStep h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.workflowStep p {
+  font-size: 0.9rem;
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.triadGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+@media (max-width: 860px) {
+  .triadGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.triadCard {
+  background: var(--site-card-bg);
+  border: 1px solid var(--site-card-border);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--site-card-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.triadBadge {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+}
+
+.scenariosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.scenarioCard {
+  background: var(--site-card-bg);
+  border: 1px solid var(--site-card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--site-card-shadow);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.scenarioCard:hover {
+  transform: translateY(-3px);
+  border-color: var(--ifm-color-primary);
+  text-decoration: none;
+  color: inherit;
+}
+
+.scenarioHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.scenarioTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.scenarioEvent {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.75rem;
+  color: var(--site-primary-accent);
+  background: rgba(56, 189, 248, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+}
+
+.quickstartTerminal {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 840px;
+  margin: 0 auto;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+.terminalHeader {
+  background: #161b22;
+  padding: 0.65rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid #30363d;
+}
+
+.terminalDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dotRed { background: #ff5f56; }
+.dotYellow { background: #ffbd2e; }
+.dotGreen { background: #27c93f; }
+
+.terminalTitle {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  color: #8b949e;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.terminalBody {
+  padding: 1.5rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.9rem;
+  color: #c9d1d9;
+  line-height: 1.7;
+}
+
+.termCommand {
+  color: #58a6ff;
+}
+
+.termComment {
+  color: #8b949e;
+}

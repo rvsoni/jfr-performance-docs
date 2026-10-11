@@ -1,0 +1,232 @@
+/**
+ * JFR Performance Lab - Custom Global Design Stylesheet
+ * Engineered for technical clarity, developer ergonomics, and accessible contrast.
+ */
+
+:root {
+  /* Core brand colors - Light theme */
+  --ifm-color-primary: #0284c7;
+  --ifm-color-primary-dark: #0369a1;
+  --ifm-color-primary-darker: #075985;
+  --ifm-color-primary-darkest: #0c4a6e;
+  --ifm-color-primary-light: #38bdf8;
+  --ifm-color-primary-lighter: #7dd3fc;
+  --ifm-color-primary-lightest: #bae6fd;
+
+  --ifm-code-font-size: 88%;
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+  
+  --site-primary-accent: #0284c7;
+  --site-secondary-accent: #6366f1;
+  --site-success-accent: #10b981;
+  --site-warning-accent: #f59e0b;
+  --site-danger-accent: #ef4444;
+
+  --site-card-bg: #ffffff;
+  --site-card-border: #e2e8f0;
+  --site-card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+
+  --docusaurus-highlighted-code-line-bg: rgba(2, 132, 199, 0.1);
+}
+
+/* Dark mode theme variables */
+[data-theme='dark'] {
+  --ifm-color-primary: #38bdf8;
+  --ifm-color-primary-dark: #0284c7;
+  --ifm-color-primary-darker: #0369a1;
+  --ifm-color-primary-darkest: #075985;
+  --ifm-color-primary-light: #7dd3fc;
+  --ifm-color-primary-lighter: #bae6fd;
+  --ifm-color-primary-lightest: #e0f2fe;
+
+  --ifm-background-color: #0b0f19;
+  --ifm-background-surface-color: #111827;
+  
+  --site-primary-accent: #38bdf8;
+  --site-secondary-accent: #818cf8;
+  --site-success-accent: #34d399;
+  --site-warning-accent: #fbbf24;
+  --site-danger-accent: #f87171;
+
+  --site-card-bg: #111827;
+  --site-card-border: #1f2937;
+  --site-card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+
+  --docusaurus-highlighted-code-line-bg: rgba(56, 189, 248, 0.15);
+}
+
+/* Typography and headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Technical Tables */
+table {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--site-card-border);
+}
+
+table th {
+  background-color: var(--ifm-background-surface-color, #f8fafc);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--site-card-border);
+}
+
+table td {
+  padding: 0.75rem 1rem;
+  font-size: 0.925rem;
+  border-bottom: 1px solid var(--site-card-border);
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Custom Metric and Status Badges */
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--ifm-font-family-monospace);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-blue {
+  background-color: rgba(56, 189, 248, 0.15);
+  color: #0284c7;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+[data-theme='dark'] .badge-blue {
+  color: #38bdf8;
+}
+
+.badge-purple {
+  background-color: rgba(129, 140, 248, 0.15);
+  color: #6366f1;
+  border: 1px solid rgba(129, 140, 248, 0.3);
+}
+
+[data-theme='dark'] .badge-purple {
+  color: #a5b4fc;
+}
+
+.badge-green {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+[data-theme='dark'] .badge-green {
+  color: #34d399;
+}
+
+.badge-amber {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: #d97706;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+[data-theme='dark'] .badge-amber {
+  color: #fbbf24;
+}
+
+/* Card Component */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.tech-card {
+  background-color: var(--site-card-bg);
+  border: 1px solid var(--site-card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--site-card-shadow);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--ifm-color-primary);
+}
+
+.tech-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.tech-card p {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
+
+/* Callout Highlights */
+.evidence-callout {
+  border-left: 4px solid var(--site-primary-accent);
+  background-color: rgba(56, 189, 248, 0.08);
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.5rem 0;
+}
+
+.evidence-callout h4 {
+  margin-top: 0;
+  color: var(--site-primary-accent);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Mermaid Diagram wrapper */
+.docusaurus-mermaid-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  background: var(--ifm-background-surface-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--site-card-border);
+}
+
+/* Code block adjustments */
+div[class*='codeBlockContainer'] {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--site-card-shadow);
+  border: 1px solid var(--site-card-border);
+}
+
+/* Responsive navbar adjustments */
+.navbar__brand {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.navbar__logo {
+  height: 28px;
+}
